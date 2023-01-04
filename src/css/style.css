@@ -1,0 +1,248 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(36, 0, 33);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+/* F */
+.wrapper {
+    background-color: rgb(36, 0, 33);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header Styling */
+
+header {
+    
+    padding: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 145px;
+    background-color: #40194d;
+}
+
+header h1 {
+    margin: 0;
+   /* B */
+    font-family: 'Permanent Marker', cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* C */
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 5rem;
+    color: rgba(189, 12, 95, 0.815);
+    text-shadow: 1px 1px powderblue;
+    text-align: center;
+}
+
+header ::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Nav Styling */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+/* D */
+nav ul {
+    display: flex;
+    align-items: flex-end;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* E */
+nav li {
+    margin-left: 50px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a {
+    color: rgb(88, 25, 78);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+/* H */
+nav a:hover::before {
+    width: 100%;
+    padding: 3px;
+}
+/* G, H */
+nav a:hover {
+    color: rgb(141, 80, 255);
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(124, 80, 255);
+}
+/* F */
+.button {
+    background-color: #017ec78f;
+    border: none;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+/* Section Styling */
+
+section {
+    font-size: 1.15rem;
+    color: mediumslateblue;
+    text-align: center;
+    padding: 0;
+    line-height: 5px;
+}
+/* F */
+.yeah {
+    text-transform: uppercase;
+    color: palevioletred;
+    font-style: italic;
+    font-stretch: semi-expanded;
+    text-shadow: 2px 2px rgb(189, 0, 0);
+}
+
+/* Aside Styling */
+
+/* F */
+.flexGrid {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.picsGrid {
+    display: grid;
+    grid-template-columns: 525px 300px 525px;
+    grid-template-rows: 393px 393px 393px;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(43, 6, 104);
+}
+
+#gridItem1 {
+    background-image: url(../img/homepage/chairLine.png);
+    /*background-size: contain;
+    background-repeat: no-repeat;*/
+}
+
+#gridItem2 {
+    background-image: url(../img/homepage/chair.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#gridItem3 {
+    background-image: url(../img/homepage/mountain.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#gridItem4 {
+    background-image: url(../img/homepage/mountain2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#gridItem5 {
+    background-image: url(../img/homepage/splitRuns.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#gridItem6 {
+    background-image: url(../img/homepage/closedRun.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#storyColumn {
+    overflow-y: scroll;
+    grid-row-end: span 3;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+/* Article Styling services.html page 
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(43, 6, 104);
+}*/
+
+/* E */
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+    
+}
+
+
+/* Footer Styling */
+footer {
+    position: sticky;
+    padding: 10px 35px 10px 10px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(216, 9, 9);
+}
+
+
+/* aboutUs.html Styling */
+
+article {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(104, 6, 11);
+}
+
+.flex2 {
+    display: flex;
+    justify-content: flex-start;
+    color: bisque;
+    
+}
+.flex2 img {
+    display: block;
+    
+}
+
+#born {
+    font-family: 'Permanent Marker', cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: rgba(189, 12, 95, 0.815);
+    text-shadow: 1px 1px powderblue;
+}
